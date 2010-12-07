@@ -36,47 +36,47 @@ While not a complete specification, the following requirements outline
 some of the necessary features for a usable data table implementation.
 
 - It should be possible to create a new table object by initializing it
- with a two dimensional array, in which each inner array represents
- the data for a single row.
+  with a two dimensional array, in which each inner array represents
+  the data for a single row.
 
 - It should also be possible to create a new table object that is empty
- at first, and gets its data appended row by row later.
+  at first, and gets its data appended row by row later.
 
 - It should be possible to set column names, and then refer to the
- columns by name anywhere that a column needs to be identified.
+  columns by name anywhere that a column needs to be identified.
 
 - Whether or not column names are set, it should always be possible to
- refer to the column by its zero-based ordinal position.
+  refer to the column by its zero-based ordinal position.
 
 - It should be possible to lookup a cell's contents by row (zero based
- index) and column (index or column name).
+  index) and column (index or column name).
 
 - It should be possible to do all of the following row manipulations:
 
-    * Retrieve an array (or Row object) consisting of all the contents
-      in that row
-    * Append a row to the end of the table
-    * Insert a row at any position in the table
-    * Delete any row
-    * Run a transformation on a row which changes its content
-      based on the return value of a block.
-      (Similar to Enumerable#map)
+     * Retrieve an array (or Row object) consisting of all the contents
+       in that row
+     * Append a row to the end of the table
+     * Insert a row at any position in the table
+     * Delete any row
+     * Run a transformation on a row which changes its content
+       based on the return value of a block.
+       (Similar to Enumerable#map)
 
 - It should be possible to do all of the following column manipulations:
-    * Retrieve an array (or Column object) consisting of
-      all the contents in that column
-    * Rename a column, if header support is enabled
-    * Append a column to the right side of the table
-    * Insert a column at any position in the table
-    * Delete any column
-    * Run a transformation on a column which changes its content
-      based on the return value of a block.
+     * Retrieve an array (or Column object) consisting of
+       all the contents in that column
+     * Rename a column, if header support is enabled
+     * Append a column to the right side of the table
+     * Insert a column at any position in the table
+     * Delete any column
+     * Run a transformation on a column which changes its content
+       based on the return value of a block.
 
 - It should be possible to do the following filtering:
-    * Reduce a table to contain only the rows that pass a conditional
-      block (similar to Enumerable#select)
-    * Reduce a table to contain only the columns that pass a
-      conditional block (similar to Enumerable#select)
+     * Reduce a table to contain only the rows that pass a conditional
+       block (similar to Enumerable#select)
+     * Reduce a table to contain only the columns that pass a
+       conditional block (similar to Enumerable#select)
 
 EXAMPLE SCENARIO:
 
@@ -99,4 +99,5 @@ for review.
 I will be running a diff against the YAML file and comparing it to a
 standard file I produced, so please try to follow the above as exactly
 as possible.  While a mismatch won't necessarily cause you to fail, a
-match will surely help you to succeed.
+match will surely help you to succeed. 
+
